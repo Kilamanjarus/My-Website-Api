@@ -1,0 +1,28 @@
+### Blog Index
+get http://localhost:3000/blogs.json
+
+### Blog Show
+get http://localhost:3000/blogs/1.json
+
+### Blog Create
+post http://localhost:3000/blogs.json
+Content-Type: application/json
+
+{
+  "title": "Day One, My First Journal",
+  "post": "Something that Actualize has introduced us into is what is called a work journal, a place to catalogue our progress in the world of coding! Something I have gotten better at this week is creating hashes! Not only was my weakness in hashes on pulling data, just hashes in general did not make much sense at the begining. However, thru much of this week's problems and exorcises, I have found myself settling in with hashes.",
+  "goals": "Ruby hash data readings are definitely something I need to improve upon!",
+  "problems": "Something I am struggling with this week has definitely been nested data in hashes. While arrays I find myself comfortable in, I still find myself stumbling oft over pulling data in a large hash.",
+  "date": "2022-07-22"
+}
+
+### Blog Update
+patch http://localhost:3000/blogs/2.json
+Content-Type: application/json
+
+{
+  "title": "Day Two, My First Journal"
+}
+
+### Blog Delete
+delete http://localhost:3000/blogs/1
