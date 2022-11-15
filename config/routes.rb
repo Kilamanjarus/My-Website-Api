@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get "/blogs/:id" => "blog_posts#show"
   patch "/blogs/:id" => "blog_posts#update"
   delete "/blogs/:id" => "blog_posts#destroy"
+
+  get "/emails" => "contact_emails#index"
+  post "/emails" => "contact_emails#post"
 end

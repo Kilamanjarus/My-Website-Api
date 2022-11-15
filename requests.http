@@ -26,3 +26,18 @@ Content-Type: application/json
 
 ### Blog Delete
 delete http://localhost:3000/blogs/1
+
+
+
+
+
+### Emails Index
+get http://localhost:3000/emails.json
+
+### Email Create
+post http://localhost:3000/emails.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com"
+}
