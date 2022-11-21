@@ -29,8 +29,6 @@ delete http://localhost:3000/blogs/1
 
 
 
-
-
 ### Emails Index
 get http://localhost:3000/emails.json
 
@@ -40,4 +38,25 @@ Content-Type: application/json
 
 {
   "email": "test@test.com"
+}
+
+
+
+
+### Problem Create
+post http://localhost:3000/problems.json
+Content-Type: application/json
+
+{
+  "problem": "test@test.com",
+  "blog_post_id": "1"
+}
+
+### Goal Create
+post http://localhost:3000/goals.json
+Content-Type: application/json
+
+{
+  "goal": "test@test.com",
+  "blog_post_id": "1"
 }

@@ -10,15 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_15_230202) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_19_203608) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "blog_posts", force: :cascade do |t|
     t.string "title"
     t.string "post"
-    t.string "goals"
-    t.string "problems"
     t.string "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -26,6 +24,20 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_15_230202) do
 
   create_table "contact_emails", force: :cascade do |t|
     t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "goals", force: :cascade do |t|
+    t.string "blog_post_id"
+    t.string "goal"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "problems", force: :cascade do |t|
+    t.string "blog_post_id"
+    t.string "problem"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

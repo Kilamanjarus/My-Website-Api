@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   get "/emails" => "contact_emails#index"
   post "/emails" => "contact_emails#post"
+
+  post "/problems" => "problems#create"
+  post "/goals" => "goals#create"
 end
