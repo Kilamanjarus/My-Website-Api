@@ -1,0 +1,10 @@
+@blog_posts.map do |blog_post|
+  {
+    id: blog_post.id,
+    title: blog_post.title,
+    post: blog_post.post,
+    date: blog_post.date,
+    problems: blog_post.problems,
+    goals: blog_post.goals,
+  }
+end
