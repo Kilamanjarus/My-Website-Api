@@ -14,6 +14,7 @@ class BlogPostsController < ApplicationController
     post.title = params[:title]
     post.post = params[:post]
     post.date = params[:date]
+
     post.save
     render json: post.as_json
   end
