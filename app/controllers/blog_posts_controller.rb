@@ -10,6 +10,7 @@ class BlogPostsController < ApplicationController
   end
 
   def create
+    p params
     post = BlogPost.new
     post.title = params[:title]
     post.post = params[:post]
