@@ -3,12 +3,11 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  Rails.application.routes.default_url_options = { :host => "http://localhost:3000" }
+  Rails.application.routes.default_url_options = { :host => "https://kilamanjarus-me.herokuapp.com" }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
 
-  config.action_mailer.default_url_options = { :host => "http://localhost:3000" }
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
