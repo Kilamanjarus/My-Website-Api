@@ -6,5 +6,6 @@
     date: blog_post.date,
     problems: blog_post.problems,
     goals: blog_post.goals,
+    image: blog_post.image,
   }
 end

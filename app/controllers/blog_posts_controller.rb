@@ -15,9 +15,9 @@ class BlogPostsController < ApplicationController
     post.title = params[:title]
     post.post = params[:post]
     post.date = params[:date]
-    post.image.attach(params[:image])
+    post.image.attach(params[:pictureFile])
 
-    # post.save
+    post.save
     render json: post.as_json
   end
 
