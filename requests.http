@@ -1,4 +1,7 @@
 ### Blog Index
+get https://kilamanjarus-me.herokuapp.com/blogged.json
+
+### Blog Index
 get http://localhost:3000/blogs.json
 
 ### Blog Show
