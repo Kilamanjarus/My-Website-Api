@@ -6,7 +6,12 @@ class BlogPostsController < ApplicationController
 
   def show
     @post = BlogPost.find_by(id: params[:id])
-    render json: @post.as_json
+    render json: BlogPostSerializer.new(@post).serializable_hash[:data][:attributes]
+  end
+
+  def last
+    @post = BlogPost.last
+    render json: BlogPostSerializer.new(@post).serializable_hash[:data][:attributes]
   end
 
   def create
