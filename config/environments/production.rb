@@ -5,6 +5,8 @@ Rails.application.configure do
 
   Rails.application.routes.default_url_options = { :host => "https://kilamanjarus-me.herokuapp.com" }
 
+  config.active_storage.service = :amazon
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
