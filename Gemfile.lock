@@ -1515,6 +1515,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
+  aws-sdk-s3
   bootsnap
   debug
   image_processing (~> 1.2)
