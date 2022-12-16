@@ -50,5 +50,4 @@ end
 
 gem "jsonapi-serializer", "~> 2.2"
 
-gem 'aws-sdk'
 gem "aws-sdk-s3", require: false
