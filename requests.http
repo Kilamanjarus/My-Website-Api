@@ -5,7 +5,7 @@ get https://kilamanjarus-me.herokuapp.com/blogged.json
 get http://localhost:3000/blogs.json
 
 ### Blog Show
-get http://localhost:3000/blogs/1.json
+get http://localhost:3000/blogs/17.json
 
 ### Blog Create
 post http://localhost:3000/blogs.json
